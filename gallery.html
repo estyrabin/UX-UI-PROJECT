@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Photographer — Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="nav-bar">
+    <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" aria-current="page" style="text-decoration:underline">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  
+  <main class="container">
+    <header class="page-header">
+      <h1>Gallery</h1>
+    </header>
+    
+    <!-- IMAGES GRID (נבנה דינמית ב-JS) -->
+    <section id="gallery" class="gallery-grid"></section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#10094;</button>
+      <img id="lightbox-img" class="lightbox-img" alt="">
+      <button class="lightbox-nav lightbox-next" aria-label="Next">&#10095;</button>
+    </div>
+
+    <!-- VIDEOS SECTION -->
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Featured Videos</h2>
+    <section class="video-grid">
+      <div class="video-container" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="0">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lighting Basics"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-info"><h3>Photography Lighting Basics</h3></div>
+      </div>
+      <div class="video-container" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="120">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Wedding BTS"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-info"><h3>Behind the Scenes</h3></div>
+      </div>
+      <div class="video-container" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="240">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Landscape Tips"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-info"><h3>Landscape Tips</h3></div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>              
+      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+  </footer>
+
+
+
+  <!-- AOS JS + init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="app.js"></script>
+
+
+ 
+</body>
+</html>

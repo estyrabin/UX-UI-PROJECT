@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Photographer — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Floating Side Banners -->
+   
+
+  <div class="banner banner-left" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000">
+    <h2>Looking for a Photographer?</h2>
+    <a href="contact.html" class="btn">Get in Touch</a>
+  </div>
+
+  <div class="banner banner-right" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000">
+    <h2>Special Package</h2>
+    <a href="contact.html" class="btn">View Packages</a>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav-bar">
+  <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+  <!-- HERO / Carousel -->
+  <section class="carousel" id="hero" data-aos="fade-up" data-aos-duration="1200">
+    <div class="div-carousel">
+      <div class="slide is-active">
+        <img src="images/slide1.jpg" alt="Bride holding bouquet at golden hour" />
+        <h2 class="caption">Golden Hour Elegance</h2>
+      </div>
+      <div class="slide">
+        <img src="images/slide2.jpg" alt="Family laughing together in a park" />
+        <h2 class="caption">Family Joy, Unscripted</h2>
+      </div>
+      <div class="slide">
+        <img src="images/slide3.jpg" alt="Urban portrait in soft neon light" />
+        <h2 class="caption">City Lights Portraits</h2>
+      </div>
+      <div class="slide">
+        <img src="images/slide4.jpg" alt="Newborn sleeping peacefully wrapped in blanket" />
+        <h2 class="caption">New Beginnings</h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="intro-text container" data-aos="fade-up">
+    <p>
+      Exploring new places is more than just sightseeing—it's about understanding the stories, 
+      culture, and details that make each destination unique. This collection brings together images and short reflections, 
+      designed not only to inspire but also to guide. Each photo is paired with insights and tips, offering a traveler's perspective with a professional touch. 
+      Think of it as both a window into the journey and a practical resource for your own adventures.
+    </p>
+  </div>
+
+
+  <!-- STORIES -->
+  <section id="stories-section" class="container" data-aos="fade-up" data-aos-duration="1200">
+  <div class="stories">
+    <div class="story-box" data-aos="zoom-in" data-aos-duration="800">
+      <img src="images/img1.jpg" alt="">
+      <h1>Port Grimaud, France</h1>
+      <p>Colorful houses line the canals... Best enjoyed in the early morning light.</p>
+      <a href="https://en.wikipedia.org/wiki/Port_Grimaud">Read More About</a>
+    </div>
+
+    <div class="story-box" data-aos="zoom-in" data-aos-delay="120" data-aos-duration="1000">
+      <img src="images/img3.jpg" alt="">
+      <h1>Ky Co Beach, Vietnam</h1>
+      <p>Hidden between green mountains and turquoise sea... a calm, adventurous escape.</p>
+      <a href="https://www.tripadvisor.com/Attraction_Review-g608528-d10001241-Reviews-Ky_Co_Beach-Quy_Nhon_Binh_Dinh_Province.html">Read More About Ky Co Beach</a>
+    </div>
+
+    <div class="story-box" data-aos="zoom-in" data-aos-delay="240" data-aos-duration="1500">
+      <img src="images/img3.jpg" alt="">
+      <h1>Burano, Italy</h1>
+      <p>Vivid facades, blue shutters, hanging laundry — everyday beauty at a slow pace.</p>
+      <a href="https://en.wikipedia.org/wiki/Burano">Read More About</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>              
+      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+  </footer>
+
+
+
+  <!-- AOS JS + init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="app.js"></script>
+
+
+ 
+</body>
+</html>
