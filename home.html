@@ -1,45 +1,42 @@
-
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <title>Photographer — Home</title>
+  <title>Photographer — Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-
 </head>
+
 <body>
-  <!-- Floating Side Banners -->
+  <!-- Nav -->
+  <nav class="nav-bar">
+    <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
+    <div class="nav-links">
+      <a href="home.html" aria-current="page" style="text-decoration:underline">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+    <!-- Floating Side Banners -->
    
 
   <div class="banner banner-left" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000">
-    <h2>Looking for a Photographer?</h2>
-    <a href="contact.html" class="btn">Get in Touch</a>
+    <h2>View Photo Galler?</h2>
+    <a href="gallery.html" class="btn">Get in Touch</a>
   </div>
 
   <div class="banner banner-right" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000">
-    <h2>Special Package</h2>
+    <h2>Contact Us</h2>
     <a href="contact.html" class="btn">View Packages</a>
   </div>
 
-  <!-- Nav -->
-  <nav class="nav-bar">
-  <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
-  <div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
 
   <!-- HERO / Carousel -->
   <section class="carousel" id="hero" data-aos="fade-up" data-aos-duration="1200">
@@ -63,7 +60,7 @@
     </div>
   </section>
 
-  <div class="intro-text container" data-aos="fade-up">
+  <div  data-aos="fade-up">
     <p>
       Exploring new places is more than just sightseeing—it's about understanding the stories, 
       culture, and details that make each destination unique. This collection brings together images and short reflections, 
@@ -74,7 +71,7 @@
 
 
   <!-- STORIES -->
-  <section id="stories-section" class="container" data-aos="fade-up" data-aos-duration="1200">
+  <section id="stories-section" class="container-stories" data-aos="fade-up" data-aos-duration="1200">
   <div class="stories">
     <div class="story-box" data-aos="zoom-in" data-aos-duration="800">
       <img src="images/img1.jpg" alt="">
