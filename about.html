@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About • Your Personal Travel Guide</title>
-  <meta name="description" content="About your personal travel guide—what I share, how I choose destinations, and how you can get involved." />
-
-  <!-- Base styles/libs already used across the site -->
+  <title>FAQ</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-
-  <!-- Page-specific light styling (kept minimal to work alongside style.css) -->
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Nav -->
-  <nav class="nav-bar">
-    <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
-    <div class="nav-links">
-      <a href="home.html">Home</a>
-      <a href="about.html" aria-current="page" style="text-decoration:underline">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="FAQ.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+ <!-- Nav -->
+<nav class="nav-bar">
+  <input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+    <span class="bar"></span>
+  </label>
+  <div class="nav-links">
+   <a href="home.html">Home</a>
+    <a href="about.html" aria-current="page" style="text-decoration:underline">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  <main class="header">
+    <h1 data-aos="fade-up">About Me</h1>
+	<section class="about-container">
 
-  <!-- Header -->
-
-  </header>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Section</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="header" data-aos="fade-up">About Me</h1>
-    <section class="about-container">
-      <p>Travel, for me, has always been more than moving from one place to another. 
+    <p>Travel, for me, has always been more than moving from one place to another. 
         It’s about immersing myself in new cultures, listening to the stories of the people I meet,
          and paying attention to the small details that often go unnoticed—the smell of a local market,
           the sound of a hidden alley, the smile of a stranger. Every journey leaves behind moments that shape the way 
@@ -62,26 +48,23 @@
 
     </section>
 
-  
+  </main>
 
-  
   <!-- FOOTER -->
   <footer class="footer">
-     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>              
-      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+    <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
   </footer>
-
-
 
   <!-- AOS JS + init -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -89,8 +72,5 @@
     AOS.init();
   </script>
   <script src="app.js"></script>
-
-
- 
 </body>
 </html>

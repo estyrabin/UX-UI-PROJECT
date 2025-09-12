@@ -13,16 +13,21 @@
 
 <body>
   <!-- Nav -->
-  <nav class="nav-bar">
-    <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
-    <div class="nav-links">
-      <a href="home.html" aria-current="page" style="text-decoration:underline">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="FAQ.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+<nav class="nav-bar">
+  <input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+    <span class="bar"></span>
+  </label>
+  <div class="nav-links">
+   <a href="home.html" aria-current="page" style="text-decoration:underline">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
 
     <!-- Floating Side Banners -->
    
@@ -56,18 +61,15 @@
     </div>
   </section>
 
-  <div  data-aos="fade-up">
-    <h1 class="header">
 
-    </h1 class="header">
-      Travel Stories & Inspirations
-  </h1>
-  </div>
+  <main class="header">
+    <h1 data-aos="fade-up">Travel Stories & Inspirations</h1>
+
+  
 
 
   <!-- STORIES -->
-  <section id="stories-section" class="container-stories" data-aos="fade-up" data-aos-duration="1200">
-  <div class="stories">
+  <section id="stories" class="stories" data-aos="fade-up" data-aos-duration="1200">
     <div class="story-box" data-aos="zoom-in" data-aos-duration="800">
       <img src="images/img1.jpg" alt="">
       <h1>Port Grimaud, France</h1>
@@ -76,7 +78,7 @@
          picture-perfect atmosphere that feels both relaxed and luxurious. Strolling along the quays, 
          you’ll find charming cafés, local markets, and views that capture the essence of
          the French Riviera without the crowds of its more famous neighbors.</p>
-      <a href="https://en.wikipedia.org/wiki/Port_Grimaud">Read More About</a>
+      <a href="https://en.wikipedia.org/wiki/Port_Grimaud">Read More About Port Grimaud</a>
     </div>
 
     <div class="story-box" data-aos="zoom-in" data-aos-delay="120" data-aos-duration="1000">
@@ -87,7 +89,7 @@
         you’ll encounter welcoming villages where tradition and mountain life blend seamlessly. 
         Whether you’re seeking a physical challenge or a spiritual connection with nature,
          Annapurna delivers an experience that is as humbling as it is unforgettable.</p>
-      <a href="https://www.tripadvisor.com/Attraction_Review-g608528-d10001241-Reviews-Ky_Co_Beach-Quy_Nhon_Binh_Dinh_Province.html">Read More About Ky Co Beach</a>
+      <a href="https://en.wikipedia.org/wiki/Annapurna">Read More Annapurna</a>
     </div>
 
     <div class="story-box" data-aos="zoom-in" data-aos-delay="240" data-aos-duration="1500">
@@ -98,10 +100,12 @@
         turning the canals into living works of art. Beyond its beauty, Burano is also known for traditional lace-making, 
         a craft that has been preserved for centuries. 
         It’s a place where every corner invites you to slow down, take photos, and soak in its vibrant character.</p>
-      <a href="https://en.wikipedia.org/wiki/Burano">Read More About</a>
+      <a href="https://en.wikipedia.org/wiki/Burano">Read More About Burano</a>
     </div>
-  </div>
+    
+  
 </section>
+  </main>
 
 
   <!-- FOOTER -->

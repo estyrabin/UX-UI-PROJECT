@@ -9,100 +9,109 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Nav -->
-  <nav class="nav-bar">
-    <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
-    <div class="nav-links">
-      <a href="home.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="FAQ.html" aria-current="page" style="text-decoration:underline">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+ <!-- Nav -->
+<nav class="nav-bar">
+  <input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+    <span class="bar"></span>
+  </label>
+  <div class="nav-links">
+   <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="FAQ.html" aria-current="page" style="text-decoration:underline">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  <main class="header">
+    <h1 data-aos="fade-up">Frequently Asked Questions</h1>
+      <section class="accordion">
+        <!-- 1 -->
+        <input type="checkbox" name="accordio" id="acc1">
+        <article class="accordion-item">
+          <label for="acc1" class="accordion-header">
+            <h3 class="accordion-title">What type of travel recommendations do you share?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>I share recommendations for hiking trails, hidden gems, cultural sites, and unique destinations suitable for all types of travelers.</p>
+          </div>
+        </article>
 
-  <main class="header" data-aos="fade-up">
-    <h1>Frequently Asked Questions</h1>
-    <section class="accordion" id="faq-accordion" aria-label="FAQ">
-      
-      <!-- 1 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">What type of travel recommendations do you share?</h3>
-          <div class="accordion-icon">＋</div>
-        </header>
-        <div class="accordion-panel">
-          <p>I share recommendations for hiking trails, hidden gems, cultural sites, and unique destinations suitable for all types of travelers.</p>
-        </div>
-      </article>
+        <!-- 2 -->
+        <input type="checkbox" name="accordio" id="acc2">
+        <article class="accordion-item">
+          <label for="acc2" class="accordion-header">
+            <h3 class="accordion-title">Do you focus on local or international destinations?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>I provide both local and international recommendations.</p>
+          </div>
+        </article>
 
-      <!-- 2 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">Do you focus on local or international destinations?</h3>
-          <div class="accordion-icon">+</div>
-        </header>
-        <div class="accordion-panel">
-          <p>I provide both local and international recommendations</p>
-        </div>
-      </article>
+        <!-- 3 -->
+        <input type="checkbox" name="accordio" id="acc3">
+        <article class="accordion-item">
+          <label for="acc3" class="accordion-header">
+            <h3 class="accordion-title">How do you choose the places you recommend?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>Based on personal experience, research, and feedback from other travelers who share their favorite spots.</p>
+          </div>
+        </article>
 
-      <!-- 3 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">How do you choose the places you recommend?</h3>
-          <div class="accordion-icon">＋</div>
-        </header>
-        <div class="accordion-panel">
-          <p>Based on personal experience, research, and feedback from other travelers who share their favorite spots.</p>
-        </div>
-      </article>
+        <!-- 4 -->
+        <input type="checkbox" name="accordio" id="acc4">
+        <article class="accordion-item">
+          <label for="acc4" class="accordion-header">
+            <h3 class="accordion-title">Can I suggest a destination for you to review?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>Absolutely! I love discovering new places. Use the contact form to suggest destinations.</p>
+          </div>
+        </article>
 
-      <!-- 4 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">Can I suggest a destination for you to review?</h3>
-          <div class="accordion-icon">＋</div>
-        </header>
-        <div class="accordion-panel">
-          <p>Absolutely! I love discovering new places. Use the contact form to suggest destinations.</p>
-        </div>
-      </article>
+        <!-- 5 -->
+        <input type="checkbox" name="accordio" id="acc5">
+        <article class="accordion-item">
+          <label for="acc5" class="accordion-header">
+            <h3 class="accordion-title">Do you share personal travel experiences?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>Yes, I share my own stories, tips, and photos from trips to help travelers connect on a personal level.</p>
+          </div>
+        </article>
 
-      <!-- 5 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">Do you share personal travel experiences?</h3>
-          <div class="accordion-icon">＋</div>
-        </header>
-        <div class="accordion-panel">
-          <p>Yes, I share my own stories, tips, and photos from trips to help travelers connect on a personal level.</p>
-        </div>
-      </article>
+        <!-- 6 -->
+        <input type="checkbox" name="accordio" id="acc6">
+        <article class="accordion-item">
+          <label for="acc6" class="accordion-header">
+            <h3 class="accordion-title">What inspires your love for travel?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>Meeting new people, exploring nature, and experiencing different cultures inspire my passion for traveling.</p>
+          </div>
+        </article>
 
-      <!-- 6 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">What inspires your love for travel?</h3>
-          <div class="accordion-icon">＋</div>
-        </header>
-        <div class="accordion-panel">
-          <p>Meeting new people, exploring nature, and experiencing different cultures inspire my passion for traveling.</p>
-        </div>
-      </article>
+        <!-- 7 -->
+        <input type="checkbox" name="accordio" id="acc7">
+        <article class="accordion-item">
+          <label for="acc7" class="accordion-header">
+            <h3 class="accordion-title">Do you plan group trips or only give advice?</h3>
+            <div class="accordion-icon"></div>
+          </label>
+          <div class="accordion-panel">
+            <p>Currently I provide recommendations and advice, but group trip planning might be added in the future.</p>
+          </div>
+        </article>
+      </section>
 
-      <!-- 7 -->
-      <article class="accordion-item" aria-expanded="false">
-        <header class="accordion-header">
-          <h3 class="accordion-title">Do you plan group trips or only give advice?</h3>
-          <div class="accordion-icon">＋</div>
-        </header>
-        <div class="accordion-panel">
-          <p>Currently I provide recommendations and advice, but group trip planning might be added in the future.</p>
-        </div>
-      </article>
 
-    </section>
   </main>
 
   <!-- FOOTER -->

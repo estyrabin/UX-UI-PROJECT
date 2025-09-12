@@ -1,28 +1,3 @@
-// ===== Burger =====
-(function(){
-  const burger = document.querySelector('.burger');
-  if (!burger) return;
-  burger.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-  });
-})();
-
-// ===== Accordion (FAQ) =====
-(function(){
-  const items = document.querySelectorAll('.accordion-item');
-  if (!items.length) return;
-  items.forEach(item => {
-    const header = item.querySelector('.accordion-header');
-    header.addEventListener('click', () => {
-      const expanded = item.getAttribute('aria-expanded') === 'true';
-      // close others
-      items.forEach(i => i.setAttribute('aria-expanded', 'false'));
-      // toggle this
-      item.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-    });
-  });
-})();
-
 // ===== Contact form validation =====
 (function(){
   const form = document.getElementById('contactForm');
