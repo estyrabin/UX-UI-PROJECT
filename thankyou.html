@@ -4,60 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thank you!</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  
-  
 </head>
 <body>
+  <!-- ================== NAVIGATION ================== -->
   <nav class="nav-bar">
-  <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
-  <div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+    <button class="burger" aria-label="Open menu"><span class="bar"></span></button>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
+  <!-- ================== MAIN CONTENT ================== -->
   <main class="thanks" data-aos="zoom-in">
-    <div class="card">
-      <h1>Thank you! Your form has been submitted </h1>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h1>Thank you! Your form has been submitted</h1>
       <p>We will get back to you as soon as possible</p>
       <a class="btn" href="home.html">Go to Home</a>
       <a class="btn" href="gallery.html" style="margin-inline-start:8px">Go to Gallery</a>
     </div>
   </main>
 
-  
-  <!-- FOOTER -->
-  <footer class="footer">
-     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>              
-      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+  <!-- ================== FOOTER ================== -->
+  <footer class="footer" data-aos="fade-up" data-aos-delay="400">
+    <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.linkedin.com/" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
   </footer>
 
-
-
-  <!-- AOS JS + init -->
+  <!-- ================== SCRIPTS ================== -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800,
+      once: true
+    });
   </script>
   <script src="app.js"></script>
-
-
- 
 </body>
 </html>

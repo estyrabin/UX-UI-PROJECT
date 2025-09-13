@@ -4,86 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Contact</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-   <!-- Nav -->
-<nav class="nav-bar">
-  <input type="checkbox" id="burger-toggle">
-  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
-    <span class="bar"></span>
-  </label>
-  <div class="nav-links">
-   <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="contact.html" aria-current="page" style="text-decoration:underline">Contact</a>
-  </div>
-</nav>
+  <!-- ================== NAVIGATION ================== -->
+  <nav class="nav-bar">
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+      <span class="bar"></span>
+    </label>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html" aria-current="page" style="text-decoration:underline">Contact</a>
+    </div>
+  </nav>
 
+  <!-- ================== MAIN CONTENT ================== -->
   <main class="header">
-    <h1>Contact</h1>
-    <p style="text-align:center;color:#345">We'd love to hear from you. Fill in the details and we'll get back to you soon.</p>
+    <h1 data-aos="fade-down">Contact</h1>
+    <p data-aos="fade-up" style="text-align:center; color:#345">
+      We'd love to hear from you. Fill in the details and we'll get back to you soon.
+    </p>
 
-    <form class="contact-form" id="contactForm" action="thankyou.html" method="GET" novalidate>
-      <div class="field">
+    <!-- Contact form -->
+    <form class="contact-form" id="contactForm" action="thankyou.html" method="GET" novalidate data-aos="zoom-in">
+      <!-- Full Name -->
+      <div class="field" data-aos="fade-up" data-aos-delay="100">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" placeholder="Full Name" required />
         <span class="error" id="nameError" role="alert"></span>
       </div>
 
-      <div class="field">
+      <!-- Email -->
+      <div class="field" data-aos="fade-up" data-aos-delay="200">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="name@example.com" required />
         <span class="error" id="emailError" role="alert"></span>
       </div>
 
-      <div class="field">
+      <!-- Message -->
+      <div class="field" data-aos="fade-up" data-aos-delay="300">
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Write your message here..." rows="6" required></textarea>
         <span class="error" id="messageError" role="alert"></span>
       </div>
 
-      <div class="actions">
+      <!-- Actions -->
+      <div class="actions" data-aos="fade-up" data-aos-delay="400">
         <button type="submit" class="btn">Submit</button>
         <button type="reset" class="btn" style="background:#0a74b9">Reset</button>
       </div>
 
+      <!-- Status messages -->
       <div id="formStatus" aria-live="polite"></div>
     </form>
   </main>
 
-  
- 
-  <!-- FOOTER -->
-  <footer class="footer">
-     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>              
-      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+  <!-- ================== FOOTER ================== -->
+  <footer class="footer" data-aos="fade-up">
+    <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.linkedin.com/" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
   </footer>
 
-
-
-  <!-- AOS JS + init -->
+  <!-- ================== SCRIPTS ================== -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800,   // animation duration
+      once: true       // run only once when scrolling down
+    });
   </script>
   <script src="app.js"></script>
-
-
- 
 </body>
 </html>

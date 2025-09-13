@@ -5,76 +5,70 @@
   <title>Photographer — Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body>
-
-  <!-- LIGHTBOX -->
-    <div id="lightbox" class="lightbox" aria-hidden="true">
-      <button class="lightbox-close" aria-label="Close">&times;</button>
-      <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#10094;</button>
-      <img id="lightbox-img" class="lightbox-img" alt="">
-      <button class="lightbox-nav lightbox-next" aria-label="Next">&#10095;</button>
-    </div>
-  <!-- Nav -->
- <!-- Nav -->
-<nav class="nav-bar">
-  <input type="checkbox" id="burger-toggle">
-  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
-    <span class="bar"></span>
-  </label>
-  <div class="nav-links">
-   <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html" aria-current="page" style="text-decoration:underline">Gallery</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="contact.html">Contact</a>
+  <!-- ================== LIGHTBOX ================== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#10094;</button>
+    <img id="lightbox-img" class="lightbox-img" alt="">
+    <button class="lightbox-nav lightbox-next" aria-label="Next">&#10095;</button>
   </div>
-</nav>
 
-  
-  
-<main class="header">
-    <h1>Journeys in Frames</h1>
-   
+  <!-- ================== NAVIGATION ================== -->
+  <nav class="nav-bar">
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+      <span class="bar"></span>
+    </label>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" aria-current="page" style="text-decoration:underline">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================== MAIN CONTENT ================== -->
+  <main class="header">
+    <h1 data-aos="fade-down">Journeys in Frames</h1>
+
     <!-- IMAGES GRID -->
-    <section id="gallery" class="gallery-grid"></section>
+    <section id="gallery" class="gallery-grid" data-aos="zoom-in"></section>
+  </main>
 
-
-
-   
-
-
-  <!-- FOOTER -->
-  <footer class="footer">
-     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>              
-      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+  <!-- ================== FOOTER ================== -->
+  <footer class="footer" data-aos="fade-up">
+    <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.linkedin.com/" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
   </footer>
 
-
-
-  <!-- AOS JS + init -->
+  <!-- ================== SCRIPTS ================== -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800,
+      once: true
+    });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script src="app.js"></script>
-
-
- 
 </body>
 </html>

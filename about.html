@@ -3,55 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FAQ</title>
+  <title>About</title>
+
+  <!-- ================== STYLES ================== -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
- <!-- Nav -->
-<nav class="nav-bar">
-  <input type="checkbox" id="burger-toggle">
-  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
-    <span class="bar"></span>
-  </label>
-  <div class="nav-links">
-   <a href="home.html">Home</a>
-    <a href="about.html" aria-current="page" style="text-decoration:underline">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  <!-- ================== NAVIGATION ================== -->
+  <nav class="nav-bar">
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+      <span class="bar"></span>
+    </label>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html" aria-current="page" style="text-decoration:underline">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================== MAIN CONTENT ================== -->
   <main class="header">
-    <h1>About Me</h1>
-	<section class="about-container">
+    <h1 data-aos="fade-down">About Me</h1>
 
-    <p>Travel, for me, has always been more than moving from one place to another. 
-        It’s about immersing myself in new cultures, listening to the stories of the people I meet,
-         and paying attention to the small details that often go unnoticed—the smell of a local market,
-          the sound of a hidden alley, the smile of a stranger. Every journey leaves behind moments that shape the way 
-          I see the world, and this space was created to gather those moments into one place.
+    <section class="about-container">
+      <article data-aos="fade-right" data-aos-duration="900">
+        <p>
+          Travel, for me, has always been about immersing myself in cultures, listening to the stories of the people I meet, 
+          and paying attention to the small details that often go unnoticed, the smell of a local market, the sound of a hidden alley, 
+          the smile of a stranger. Every journey leaves behind moments that shape the way I see the world, 
+          and this space was created to gather those moments into one place.
+        </p>
 
-            Here you’ll find a blend of photographs, videos, and reflections that capture not only the landscapes and
-            sights but also the emotions and experiences behind them. Each image tells a story, and each video 
-            brings to life the movement, energy, and spirit of travel. 
-            My goal is not only to share where I’ve been but also to spark curiosity, inspire exploration, 
-            and highlight the beauty in both the grand adventures and the quiet pauses along the way.
+        <br/>
 
-            This is more than a travel log—it’s a collection of perspectives, memories, 
-            and insights that I hope will resonate with fellow travelers, dreamers, 
-            and anyone who believes that every journey has something unique to teach.
-      </p>
+        <p>
+          What began as a short trip almost ten years ago turned into a lifestyle of constant exploration. With a backpack, 
+          a camera, and endless curiosity, I've wandered from the colorful markets of Morocco to the quiet rice terraces of Bali, 
+          collecting not only photographs but also friendships, recipes, and memories that continue to shape who I am.
+        </p>
 
-      <img src="images/profile.jpg" alt="A scenic travel destination with mountains and a lake">
+        <br/>
 
+        <p>
+          Here you'll find a blend of photographs, videos, and reflections that capture not only the landscapes and sights 
+          but also the emotions and experiences behind them. Each image tells a story, and each video brings to life the movement, energy, 
+          and spirit of travel. My goal is not only to share where I've been but also to spark curiosity, inspire exploration, 
+          and highlight the beauty in both the grand adventures and the quiet pauses along the way while also sharing a few tips and insights to 
+          make your own journeys a little easier and richer.
+        </p>
+      </article>
+
+      <img src="images/profile.jpg" alt="A scenic travel destination with mountains and a lake" data-aos="fade-left" data-aos-duration="900">
     </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- ================== FOOTER ================== -->
+  <footer class="footer" data-aos="fade-up">
     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
       <i class="fab fa-facebook-f"></i>
     </a>
@@ -61,16 +73,18 @@
     <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
       <i class="fab fa-tiktok"></i>
     </a>
-    <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/" class="social-icon linkedin" aria-label="LinkedIn">
       <i class="fab fa-linkedin-in"></i>
     </a>
   </footer>
 
-  <!-- AOS JS + init -->
+  <!-- ================== SCRIPTS ================== -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800,
+      once: true
+    });
   </script>
-  <script src="app.js"></script>
 </body>
 </html>

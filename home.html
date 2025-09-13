@@ -5,49 +5,41 @@
   <title>Photographer — Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Nav -->
-<nav class="nav-bar">
-  <input type="checkbox" id="burger-toggle">
-  <label for="burger-toggle" class="burger" aria-label="Toggle menu">
-    <span class="bar"></span>
-  </label>
-  <div class="nav-links">
-   <a href="home.html" aria-current="page" style="text-decoration:underline">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  <!-- ================== NAVIGATION ================== -->
+  <nav class="nav-bar">
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger" aria-label="Toggle menu">
+      <span class="bar"></span>
+    </label>
+    <div class="nav-links">
+      <a href="home.html" aria-current="page" style="text-decoration:underline">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-
-
-    <!-- Floating Side Banners -->
-   
-
+  <!-- ================== BANNERS ================== -->
   <div class="banner banner-left" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000">
     <h2>Explore Our Moments</h2>
     <a href="gallery.html" class="btn">View Gallery</a>
   </div>
-
   <div class="banner banner-right" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000">
     <h2>Contact Us</h2>
     <a href="contact.html" class="btn">Get in Touch</a>
   </div>
-
-
+  
+  <!-- ================== MAIN CONTENT ================== -->
   <main class="header">
-
-  <!-- HERO / Carousel -->
-  <section class="carousel" id="hero" data-aos="fade-up" data-aos-duration="1200">
-    <div class="div-carousel">
+    <!-- HERO / Carousel -->
+    <section class="carousel" id="hero">
       <div class="slide is-active">
         <img src="images/slide1.jpg" alt="Bride holding bouquet at golden hour" />
       </div>
@@ -60,81 +52,95 @@
       <div class="slide">
         <img src="images/slide4.jpg" alt="Newborn sleeping peacefully wrapped in blanket" />
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Page Heading -->
+    <h1 data-aos="fade-down">Travel Stories & Inspirations</h1>
 
-    <h1>Travel Stories & Inspirations</h1>
+    <!-- STORIES -->
+    <section id="stories" class="stories">
+      <!-- Story 1 -->
+      <article class="story-box" data-aos="zoom-in" data-aos-duration="800">
+        <div class="story-image">
+          <img src="images/img1.jpg" alt="Canals in Port Grimaud, France">
+        </div>
+        <div class="story-content">
+          <h1>Port Grimaud, France</h1>
+          <p>
+            Often called the “Venice of Provence,” Port Grimaud immediately won me over with its pastel houses lining the canals. 
+            I loved how every home seemed to have a boat waiting at the doorstep, giving the whole place a relaxed yet elegant charm. 
+            Walking along the quays felt like stepping into a postcard, but without the overwhelming crowds of nearby Riviera towns. 
+            <br><br>
+            <strong>My tip:</strong> Go early in the morning when the canals are quiet and the reflections in the water are at their best for photos. 
+            Renting a small boat gave me a whole new perspective of the colorful façades, and if you’re here on a Sunday, don’t miss the market—it’s full of local flavors and Provençal treasures.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Port_Grimaud" class="read-more">Read More</a>
+        </div>
+      </article>
 
-  
+      <!-- Story 2 -->
+      <article class="story-box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+        <div class="story-image">
+          <img src="images/img2.jpg" alt="Himalayan mountains in Annapurna, Nepal">
+        </div>
+        <div class="story-content">
+          <h1>Annapurna, Nepal</h1>
+          <p>
+            Trekking in the Annapurna region was one of the most humbling experiences of my travels. 
+            From the terraced fields to the rhododendron forests and the snow-capped peaks, every step felt like walking through a living painting. 
+            The warmth of the villages along the way made the journey even more special—I’ll never forget the smiles and the endless plates of comforting dhal bhat shared by locals. 
+            <br><br>
+            <strong>My tip:</strong> Give yourself at least 10–12 days if you can; rushing through would mean missing the magic of watching the mountains change with the light. 
+            Start your hikes early before the clouds roll in, always carry some cash for the remote villages, and don’t underestimate the power of dhal bhat to keep you going.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Annapurna" class="read-more">Read More</a>
+        </div>
+      </article>
 
-
-  <!-- STORIES -->
-  <section id="stories" class="stories">
-    <div class="story-box" data-aos="zoom-in" data-aos-duration="800">
-      <img src="images/img1.jpg" alt="">
-      <h1>Port Grimaud, France</h1>
-      <p>Often called the “Venice of Provence,” Port Grimaud is a colorful seaside village built 
-        on a series of canals. Its pastel houses, each with a boat dock at the front door, create a
-         picture-perfect atmosphere that feels both relaxed and luxurious. Strolling along the quays, 
-         you’ll find charming cafés, local markets, and views that capture the essence of
-         the French Riviera without the crowds of its more famous neighbors.</p>
-      <a href="https://en.wikipedia.org/wiki/Port_Grimaud">Read More About Port Grimaud</a>
-    </div>
-
-    <div class="story-box" data-aos="zoom-in" data-aos-delay="120" data-aos-duration="1000">
-      <img src="images/img2.jpg" alt="">
-      <h1>Annapurna, Nepal</h1>
-      <p>The Annapurna region is a trekker’s paradise, offering breathtaking Himalayan landscapes, 
-        from terraced fields and rhododendron forests to snow-capped peaks that seem close enough to touch. Along the trails, 
-        you’ll encounter welcoming villages where tradition and mountain life blend seamlessly. 
-        Whether you’re seeking a physical challenge or a spiritual connection with nature,
-         Annapurna delivers an experience that is as humbling as it is unforgettable.</p>
-      <a href="https://en.wikipedia.org/wiki/Annapurna">Read More Annapurna</a>
-    </div>
-
-    <div class="story-box" data-aos="zoom-in" data-aos-delay="240" data-aos-duration="1500">
-      <img src="images/img3.jpg" alt="">
-      <h1>Burano, Italy</h1>
-      <p>Burano is a small island in the Venetian Lagoon, famous for its kaleidoscope of brightly painted houses. 
-        Each color tells a story, chosen by families and passed down through generations, 
-        turning the canals into living works of art. Beyond its beauty, Burano is also known for traditional lace-making, 
-        a craft that has been preserved for centuries. 
-        It’s a place where every corner invites you to slow down, take photos, and soak in its vibrant character.</p>
-      <a href="https://en.wikipedia.org/wiki/Burano">Read More About Burano</a>
-    </div>
-    
-  
-</section>
+      <!-- Story 3 -->
+      <article class="story-box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+        <div class="story-image">
+          <img src="images/img3.jpg" alt="Colorful houses in Burano, Italy">
+        </div>
+        <div class="story-content">
+          <h1>Burano, Italy</h1>
+          <p>
+            Burano felt like stepping into a painter’s palette. 
+            Every canal was framed by houses in bold, joyful colors, and I loved learning how families have been passing down these colors for generations. 
+            Beyond the beauty, I also discovered the island’s lace-making tradition—it was inspiring to see artisans preserving this delicate craft. 
+            <br><br>
+            <strong>My tip:</strong> Take the vaporetto early in the morning before the crowds arrive and wander into the quieter alleys—that’s where I found the most photogenic corners. 
+            If you get hungry, sit down for a risotto de gò, a fish dish unique to Burano that instantly became one of my Venetian favorites.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Burano" class="read-more">Read More</a>
+        </div>
+      </article>
+    </section>
   </main>
 
-
-  <!-- FOOTER -->
-  <footer class="footer">
-     <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>              
-      <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+  <!-- ================== FOOTER ================== -->
+  <footer class="footer" data-aos="fade-up">
+    <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/" class="social-icon tiktok" aria-label="Tiktok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.linkedin.com/" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
   </footer>
 
-
-
-  <!-- AOS JS + init -->
+  <!-- ================== SCRIPTS ================== -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800,
+      once: true
+    });
   </script>
-  <script src="app.js"></script>
-
-
- 
 </body>
 </html>
